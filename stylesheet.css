@@ -1,0 +1,9 @@
+table, td  {
+    border: 1px solid grey !important;
+    border-collapse: collapse;
+    padding: 5px;
+  }
+
+  a#filterList, a#showList {
+    cursor: pointer;
+  }
