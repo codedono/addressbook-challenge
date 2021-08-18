@@ -20,13 +20,13 @@
 
         <!-- UPDATE: Enter cusomter ID to filter addresses. -->
         <div class="container">
-            <a id="filterList">Remove Table</a>
+            <button id="filterList" class="border">Remove Table</button>
             |
-            <a id="showList" >Show All</a><br><br>
+            <button id="showList" class="border">Show All</button><br><br>
 
             <!-- UPDATE NEEDED: to filter address list -->
             <input type="text" ng-model="CustomerIDModel" placeholder="CustomerID Filter">
-            <button>Filter</button>
+            <button id="filterID">Filter</button>
             <br><br>
         </div>
         <br>
@@ -107,7 +107,7 @@
           <br>
     </body>
 
-    <script type="text/javascript">
+    <script>
         $(document).ready(function() {
             // setting up to add filter update.
             console.log( "Coded by Leroy Donovan Gasque on 8/17/2021." );
@@ -120,7 +120,7 @@
             });
 
             // customID filter alert for update message
-            $("button").click(function(){
+            $("#filterID").click(function(){
                 alert("CustomID filter still needs to be updated.");
             })
         });
